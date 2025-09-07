@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al XAYAAT MEDICAL & DENTAL CLINIC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Ensure images are closer to services */
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .content img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    /* Floating buttons */
+    .float-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .call-float {
+      bottom: 90px;
+      background: #007BFF;
+    }
+
+    /* Feedback section */
+    .feedback {
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 600px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .feedback h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .feedback form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .feedback input, .feedback textarea, .feedback button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .feedback button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .feedback button:hover {
+      background: #004a99;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="images/logo.png" alt="Clinic Logo" class="logo">
+    <h1>AL XAYAAT MEDICAL AND DENTAL CLINIC</h1>
+    <p class="slogan">Touching lives with care</p>
+
+    <!-- Welcome Statement -->
+    <table class="welcome-box">
+      <tr>
+        <td>
+          Welcome to Al Xayaat Medical & Dental Clinic. <br>
+          We provide high quality, affordable and accessible healthcare services that enhance compassion and excellence.
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <!-- Dental Services -->
+  <section class="services dental">
+    <h2 class="capsule">DENTAL SERVICES</h2>
+    <div class="content">
+      <ol>
+        <li><i class="fa-solid fa-tooth"></i> Extraction</li>
+        <li><i class="fa-solid fa-tooth"></i> Fillings</li>
+        <li><i class="fa-solid fa-tooth"></i> Root Canal</li>
+        <li><i class="fa-solid fa-tooth"></i> Braces</li>
+        <li><i class="fa-solid fa-tooth"></i> Bonding</li>
+        <li><i class="fa-solid fa-tooth"></i> Teeth Cleaning</li>
+        <li><i class="fa-solid fa-tooth"></i> Replacement</li>
+        <li><i class="fa-solid fa-tooth"></i> Veneers</li>
+        <li><i class="fa-solid fa-tooth"></i> Crowns</li>
+        <li><i class="fa-solid fa-tooth"></i> Dentures</li>
+        <li><i class="fa-solid fa-tooth"></i> Teeth Treatment</li>
+      </ol>
+      <img src="images/dental.png" alt="Dental Services">
+    </div>
+  </section>
+
+  <!-- Clinical Services -->
+  <section class="services clinical">
+    <h2 class="capsule">CLINICAL SERVICES</h2>
+    <div class="content">
+      <ul>
+        <li>General Consultation</li>
+        <li>Gynecology Consultation</li>
+        <li>Family Planning</li>
+        <li>Immunization</li>
+        <li>Antenatal Clinic</li>
+        <li>Minor Surgeries</li>
+        <li>Treatment</li>
+      </ul>
+      <img src="images/cons.png" alt="Clinical Services">
+    </div>
+  </section>
+
+  <!-- Laboratory Services -->
+  <section class="services laboratory">
+    <h2 class="capsule">LABORATORY SERVICES</h2>
+    <div class="content">
+      <ul>
+        <li>Full Haemogram</li>
+        <li>Blood Group</li>
+        <li>HIV Testing</li>
+        <li>Pregnancy Testing</li>
+        <li>Microscopy</li>
+        <li>Blood Screening</li>
+        <li>H. Pylori Testing</li>
+        <li>Blood Sugar (B/S)</li>
+      </ul>
+      <img src="images/lab.png" alt="Laboratory Services">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2 class="capsule">CONTACT US</h2>
+    <p>📍 Location: Fedha Estate, along Nyayo Gate B, opposite Moonshot Supermarket</p>
+    <p>📞 Call: 0728573373 / 0703305955</p>
+    
+    <!-- Embedded Google Map -->
+    <iframe 
+      src="https://www.google.com/maps?q=Fedha%20Estate,%20Nyayo%20Gate%20B,%20opposite%20Moonshot%20Supermarket&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="feedback">
+    <h2>Client Feedback</h2>
+    <form action="mailto:yourclinicemail@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254728573373" class="float-btn whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Floating Call -->
+  <a href="tel:+254728573373" class="float-btn call-float">
+    <i class="fa fa-phone"></i>
+  </a>
+</body>
+</html>

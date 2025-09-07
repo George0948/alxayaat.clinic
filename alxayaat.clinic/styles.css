@@ -1,0 +1,246 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding-bottom: 100px; /* space for floating buttons */
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: #006699;
+  color: white;
+  padding: 20px;
+}
+
+header .logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+header .slogan {
+  font-size: 18px;
+  font-style: italic;
+  margin: 8px 0 15px 0;
+  color: #fff;
+}
+
+.welcome-box {
+  margin: 0 auto;
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 16px;
+}
+
+/* Capsule Titles */
+.capsule {
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Services */
+.services {
+  padding: 25px;
+}
+
+.services .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px; /* closer spacing */
+}
+
+.services ol, 
+.services ul {
+  flex: 1;
+}
+
+.services img {
+  width: 270px; /* slightly larger */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Dental */
+.dental {
+  background: #e6f0ff; /* light blue */
+}
+
+.dental li {
+  list-style: none;
+  margin: 6px 0;
+  font-size: 16px;
+  color: red;
+}
+
+.dental li i {
+  color: red;
+  margin-right: 8px;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+/* Clinical */
+.clinical {
+  background: #222;
+  color: white;
+}
+
+.clinical li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Laboratory */
+.laboratory {
+  background: #d9f2d9; /* light green */
+}
+
+.laboratory li {
+  list-style: square;
+  margin-left: 20px;
+  color: #004488;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 25px;
+  background: #fff;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact iframe {
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Feedback */
+.feedback {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feedback h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #006699;
+}
+
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.feedback button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.feedback button:hover {
+  background: #004a99;
+}
+
+/* Floating Buttons */
+.float-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-float {
+  background: #25d366;
+  right: 20px;
+}
+
+.whatsapp-float:hover {
+  background: #1da851;
+}
+
+.call-float {
+  background: #007BFF;
+  right: 90px; /* move left of WhatsApp */
+}
+
+.call-float:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services .content {
+    flex-direction: row; /* list left, image right */
+    gap: 10px;
+  }
+
+  .services img {
+    width: 180px;
+  }
+
+  .welcome-box {
+    width: 95%;
+    font-size: 14px;
+  }
+}
